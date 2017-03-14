@@ -51,6 +51,13 @@ Vagrant.configure("2") do |config|
   # Example for VirtualBox:
   #
    config.vm.provider "virtualbox" do |vb|
+     
+config.vm.synced_folder "./.dockerpulls/", "/dockerpulls/", id: "dockerdir",
+    owner: "ubuntu",
+    group: "ubuntu",
+    mount_options: ["dmode=777,fmode=777"]     
+     
+     
   #   # Display the VirtualBox GUI when booting the machine
   #   vb.gui = true
   #
