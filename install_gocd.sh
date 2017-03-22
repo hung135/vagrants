@@ -10,5 +10,6 @@
       docker exec gocdserver bash -c "git config --global http.sslverify false"
 
       #https://hub.docker.com/r/gocd/gocd-agent/
-      docker run --restart=always --name gocd-agent1 -it -d -e GO_SERVER=192.168.33.10 gocd/gocd-agent
-      docker run --restart=always --name gocd-agent2 -it -d -e GO_SERVER=192.168.33.10 gocd/gocd-agent
+      #this has ben deprecated and they removed the repo
+      #docker run --restart=always --name gocd-agent1 -it -d -e GO_SERVER=192.168.33.10 gocd/gocd-agent
+      #docker run --restart=always --name gocd-agent2 -it -d -e GO_SERVER=192.168.33.10 gocd/gocd-agent
